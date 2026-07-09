@@ -40,6 +40,7 @@
   <meta name="twitter:description" content="냉장·냉동 보관부터 냉장실 저온 해동까지, 우니를 좋은 상태로 사용하는 방법을 안내합니다.">
   <meta name="twitter:image" content="https://oceanperu-uni-recommended-manual.pages.dev/assets/oceanperu-manual-og-thumbnail.jpg">
   <meta name="twitter:image:alt" content="오션페루 우니 보관·해동 공식 메뉴얼 썸네일">
+  <link rel="me" href="https://www.instagram.com/oceanperu_official/">
 
   <script type="application/ld+json">
   {
@@ -51,7 +52,10 @@
     "inLanguage": "ko-KR",
     "publisher": {
       "@type": "Organization",
-      "name": "주식회사 오션페루"
+      "name": "주식회사 오션페루",
+      "sameAs": [
+        "https://www.instagram.com/oceanperu_official/"
+      ]
     }
   }
   </script>
@@ -168,6 +172,21 @@
       font-size:12px;
       font-weight:900;
       box-shadow:0 8px 20px rgba(73,62,0,.12);
+    }
+
+    .header-instagram{
+      flex:0 0 auto;
+      min-height:42px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:0 15px;
+      border-radius:999px;
+      background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4);
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+      box-shadow:0 8px 20px rgba(129,52,175,.14);
     }
 
     main{padding-bottom:76px}
@@ -467,6 +486,26 @@
       font-size:13px;
       font-weight:900;
     }
+    .contact-actions{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom:13px;
+    }
+    .instagram-btn{
+      min-height:46px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:0 18px;
+      border-radius:13px;
+      background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4);
+      color:#fff;
+      font-size:13px;
+      font-weight:900;
+      box-shadow:0 10px 22px rgba(129,52,175,.16);
+    }
     .channel-url{margin-top:11px;color:rgba(255,255,255,.6);font-size:11px;overflow-wrap:anywhere}
 
     .page-footer{
@@ -484,6 +523,32 @@
     }
     .footer-logo{width:56px;height:70px;object-fit:contain;flex:0 0 auto}
     .page-footer span{color:var(--blue);font-weight:700}
+    .footer-copy{min-width:0}
+    .footer-channel-row{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:13px;
+    }
+    .footer-channel-row a{
+      min-height:38px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:0 13px;
+      border-radius:12px;
+      font-size:12px;
+      font-weight:900;
+    }
+    .footer-kakao{
+      background:#fee500;
+      color:#261f00;
+    }
+    .footer-instagram{
+      background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af,#515bd4);
+      color:#fff;
+    }
 
     .floating-kakao{
       position:fixed;
@@ -506,7 +571,7 @@
       .brand-bar{min-height:68px;padding:10px 16px;gap:10px}
       .brand-logo{width:46px;height:46px}
       .brand-note{display:none}
-      .header-cta{min-height:40px;padding:0 12px;font-size:11px}
+      .header-cta,.header-instagram{min-height:40px;padding:0 12px;font-size:11px}
       .hero{padding-top:24px}
       .quick-guide{grid-template-columns:1fr}
       .quick-item{min-height:0}
@@ -533,7 +598,8 @@
       .rule-list li{font-size:14px}
       .contact-card{grid-template-columns:1fr;text-align:center;padding:24px 18px}
       .qr-wrap{width:min(220px,78vw);margin:0 auto}
-      .kakao-btn{width:100%}
+      .contact-actions{justify-content:center}
+      .kakao-btn,.instagram-btn{width:100%}
       .page-footer{flex-direction:column;align-items:center;text-align:center;padding:28px 18px}
       .floating-kakao{right:16px;bottom:max(16px,env(safe-area-inset-bottom));width:54px;height:54px}
     }
@@ -543,8 +609,9 @@
       .brand{gap:9px}
       .brand-logo{width:42px;height:42px}
       .brand-copy strong{font-size:13px}
-      .header-cta{width:42px;padding:0;font-size:0}
+      .header-cta,.header-instagram{width:42px;padding:0;font-size:0}
       .header-cta::before{content:"💬";font-size:18px}
+      .header-instagram::before{content:"📷";font-size:18px}
       .hero,.content-section,.contact-section{padding-left:14px;padding-right:14px}
       .bridge-note,.transition-copy{padding:15px}
       .card-head,.card-body{padding:17px}
@@ -555,7 +622,7 @@
     }
 
     @media(hover:hover){
-      .header-cta:hover,.kakao-btn:hover,.floating-kakao:hover{filter:brightness(.97);transform:translateY(-1px)}
+      .header-cta:hover,.header-instagram:hover,.kakao-btn:hover,.instagram-btn:hover,.footer-channel-row a:hover,.floating-kakao:hover{filter:brightness(.97);transform:translateY(-1px)}
     }
 
     @media(prefers-reduced-motion:reduce){
@@ -580,6 +647,7 @@
       <div class="brand-actions">
         <p class="brand-note">우니의 좋은 상태를 위한<br>보관·해동 공식 가이드</p>
         <a class="header-cta" href="https://pf.kakao.com/_DgHsG" target="_blank" rel="noopener noreferrer">💬 카카오톡 문의</a>
+        <a class="header-instagram" href="https://www.instagram.com/oceanperu_official/" target="_blank" rel="noopener noreferrer">📷 인스타그램</a>
       </div>
     </header>
 
@@ -753,9 +821,12 @@
           <div class="contact-copy">
             <small>OCEANPERU KAKAO CHANNEL</small>
             <h2 id="contact-title">보관·해동 중 궁금한 점은<br>카카오톡으로 문의해 주세요</h2>
-            <p>제품 안내와 새로운 입고 소식, 오션페루의 업데이트를 카카오톡 채널에서 확인할 수 있습니다.</p>
-            <a class="kakao-btn" href="https://pf.kakao.com/_DgHsG" target="_blank" rel="noopener noreferrer">💬 카카오톡 채널 열기</a>
-            <div class="channel-url">채널 주소 · pf.kakao.com/_DgHsG</div>
+            <p>제품 안내와 새로운 입고 소식, 우니 활용 콘텐츠는 카카오톡 채널과 인스타그램에서 함께 확인할 수 있습니다.</p>
+            <div class="contact-actions">
+              <a class="kakao-btn" href="https://pf.kakao.com/_DgHsG" target="_blank" rel="noopener noreferrer">💬 카카오톡 채널 열기</a>
+              <a class="instagram-btn" href="https://www.instagram.com/oceanperu_official/" target="_blank" rel="noopener noreferrer">📷 인스타그램 보기</a>
+            </div>
+            <div class="channel-url">채널 주소 · pf.kakao.com/_DgHsG<br>Instagram · @oceanperu_official</div>
           </div>
         </div>
       </section>
@@ -763,7 +834,13 @@
 
     <footer class="page-footer">
       <img class="footer-logo" src="assets/oceanperu-logo-square.svg" alt="오션페루" width="56" height="70" loading="lazy" decoding="async">
-      <p>본 메뉴얼은 <span>오션페루</span>가 제품 상태 유지를 돕기 위해 작성한 공식 가이드입니다.<br>상품별 최종 보관방법과 소비기한은 실제 제품 라벨을 기준으로 확인해 주세요.</p>
+      <div class="footer-copy">
+        <p>본 메뉴얼은 <span>오션페루</span>가 제품 상태 유지를 돕기 위해 작성한 공식 가이드입니다.<br>상품별 최종 보관방법과 소비기한은 실제 제품 라벨을 기준으로 확인해 주세요.</p>
+        <div class="footer-channel-row">
+          <a class="footer-kakao" href="https://pf.kakao.com/_DgHsG" target="_blank" rel="noopener noreferrer">카카오톡 채널 ↗</a>
+          <a class="footer-instagram" href="https://www.instagram.com/oceanperu_official/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        </div>
+      </div>
     </footer>
   </div>
 
