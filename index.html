@@ -726,6 +726,11 @@
       .lp .page-footer{align-items:flex-start;text-align:left}
     }
 
+    /* 헤더 로고: 가로형 로고(흰 글자) + 네이비 헤더, 크기는 컬렉션 기준(PC 44px / 모바일 34px) */
+    .lp .brand-bar{background:var(--navy);border-bottom:0}
+    .lp .brand-logo.brand-logo-wide{width:auto;height:44px;max-width:176px}
+    .lp .brand-note{color:rgba(255,255,255,.75)}
+    @media(max-width:639px){.lp .brand-logo.brand-logo-wide{height:34px;max-width:150px}}
   </style>
 </head>
 <body class="lp">
@@ -739,11 +744,7 @@
   <div class="page">
     <header class="brand-bar">
       <a class="brand" href="#top" aria-label="오션페루 우니 메뉴얼 상단으로">
-        <img class="brand-logo" src="assets/oceanperu-logo-round.webp" alt="오션페루 로고" width="54" height="54">
-        <span class="brand-copy">
-          <strong>OCEANPERU</strong>
-          <span>NATURAL SEA FOOD</span>
-        </span>
+        <img class="brand-logo brand-logo-wide" src="assets/oceanperu-logo-header.webp" alt="OCEANPERU NATURAL SEA FOOD" width="166" height="44">
       </a>
 
       <div class="brand-actions">
