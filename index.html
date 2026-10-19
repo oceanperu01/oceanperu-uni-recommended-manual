@@ -731,6 +731,14 @@
     .lp .brand-logo.brand-logo-wide{width:auto;height:44px;max-width:176px}
     .lp .brand-note{color:rgba(255,255,255,.75)}
     @media(max-width:639px){.lp .brand-logo.brand-logo-wide{height:34px;max-width:150px}}
+    /* 모바일·PC 점검 반영 (2026-10-19): 전화 아이콘 통일, 모바일 QR 숨김 */
+    .lp .header-cta{display:inline-flex;align-items:center;gap:6px}
+    .lp .header-cta::before{content:none!important}
+    .lp .lp-phone-ico{flex:0 0 auto}
+    .lp .header-cta .lp-phone-ico{width:16px;height:16px}
+    .lp .floating-phone{display:grid;place-items:center;color:#fff}
+    @media(max-width:920px){.lp .qr-wrap,.lp .qr-caption{display:none!important}}
+    @media(max-width:380px){.lp .header-cta .lp-phone-ico{width:19px;height:19px}}
   </style>
 </head>
 <body class="lp">
@@ -749,7 +757,7 @@
 
       <div class="brand-actions">
         <p class="brand-note">우니의 좋은 상태를 위한<br>보관·해동 공식 가이드</p>
-        <a class="header-cta" href="tel:0216881258">📞 전화 문의</a>
+        <a class="header-cta" href="tel:0216881258"><svg class="lp-phone-ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>전화 문의</a>
         <a class="header-instagram" href="https://www.instagram.com/oceanperu_official/" target="_blank" rel="noopener noreferrer">📷 인스타그램</a>
       </div>
     </header>
@@ -952,6 +960,6 @@
     </footer>
   </div>
 
-  <a class="floating-kakao floating-phone" href="tel:0216881258" aria-label="오션페루 고객센터 전화 연결">📞</a>
+  <a class="floating-kakao floating-phone" href="tel:0216881258" aria-label="오션페루 고객센터 전화 연결"><svg class="lp-phone-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
 </body>
 </html>
